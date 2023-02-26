@@ -180,11 +180,32 @@
             <input type="radio" name="contactMethod" id="contactPhone"> 
             <label for="contactPhone">Phone</label>
         </fieldset>
-        Email Address (Enter Email)
-        Phone Number (Enter telephone number)
-
-        Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-        Travel Time (Fall, Winter, Spring, Summer, Flexible)
+        <label for="email">Address<span class="required">*</span></label>  
+        <input id="email" type="email" placeholder="Enter Email" required>
+        <label for="phone">Phone Number<span class="required">*</span></label>  
+        <input type="number" name="phone" id="phone" placeholder="Enter telephone number" req> 
+        
+        <label for="destinationSelect">Destination<span class="required">*</span></label>
+        <select name="destinationSelect" id="destinationSelect" required>
+            <option label=" "></option>
+            <option label="Barcelona">Barcelona</option>
+            <option label="Granada">Granada</option>
+            <option label="Ibiza">Ibiza</option>
+            <option label="Madrid">Madrid</option>
+            <option label="Majorca">Majorca</option>
+            <option label="Seville">Seville</option>
+            <option label="Tenerife">Tenerife</option>
+            <option label="Valencia">Valencia</option>
+        </select>
+        <label for="travelTime">Travel Time<span class="required">*</span></label>
+        <select name="travelTime" id="travelTime" required>
+            <option label=""> </option>
+            <option label="Fall">Fall</option>
+            <option label="Winter">Winter</option>
+            <option label="Spring">Spring</option>
+            <option label="Summer">Summer</option>
+            <option label="Flexible">Flexible</option>
+        </select>
     </form>
 </section>
 
