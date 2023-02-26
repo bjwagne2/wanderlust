@@ -165,18 +165,27 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 </section>
 <section id="contact">
-<h2>Contact Us</h2>
-<form>
-First Name (Enter first name)
-Last Name (Enter last name)
+    <h2>Contact Us</h2>
+    <form>
+        <label for="firstName">First Name<span class="required">*</span></label> 
+        <input id="firstName" type="text" placeholder="Enter first name" required> 
+        <label for="lastName">Last Name<span class="required">*</span></label>  
+        <input id="lastName" type="text" placeholder="Enter last name" required>
+        <fieldset>
+            <legend>Contact Method</legend> 
+            <input type="radio" name="contactMethod" id="contactEmail"> 
+            <label for="contactEmail">Email</label> 
+            <input type="radio" name="contactMethod" id="contactText"> 
+            <label for="contactText">Text</label> 
+            <input type="radio" name="contactMethod" id="contactPhone"> 
+            <label for="contactPhone">Phone</label>
+        </fieldset>
+        Email Address (Enter Email)
+        Phone Number (Enter telephone number)
 
-Contact Method (Email, Text, Phone)
-Email Address (Enter Email)
-Phone Number (Enter telephone number)
-
-Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-Travel Time (Fall, Winter, Spring, Summer, Flexible)
-</form>
+        Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
+        Travel Time (Fall, Winter, Spring, Summer, Flexible)
+    </form>
 </section>
 
 </main>
