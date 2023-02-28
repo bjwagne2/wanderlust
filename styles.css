@@ -86,34 +86,91 @@ header{
     width: 100%;
     background: linear-gradient(#55BCD5,#ffffff);
     padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 header h1{
     font-size: 3rem;
     padding: 0px 50px 0px 25px;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 
 header img{
     display: block;
     width: 100%;
-    max-width: 150px;
+    max-width: 175px;
     position: relative;
     margin-bottom: 25px;
 }
 
-header h2{
+
+#menu-toggle li a{
+    text-decoration: none;
+    color:  var(--dark-gray);
+    background-color: var(--teal);
+    outline: solid 1px var(--black);
+    list-style-type: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    width: 450px;
+}
+
+#menu-toggle ul{
+    position: absolute;
+    top: -270px;
+}
+ 
+#toggle{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    height: 25px;
+    cursor: pointer;
+    left: 300px;
+    top: 45px;
+    opacity: 0;
+   
+ }
+
+ #toggle:checked ~ ul{
+    top: 0px;
+ }
+
+#menu-toggle label{
+    position: absolute;
+    display: grid;
+    height: 25px;
+    width: 160px;
+    top: 45px;
+    left: 300px;
+    padding: 15px;
+    background-color: var(--yellow);
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sr-only{
     position: relative;
     left: -10000px;
     top: auto;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+
    
 }
 header p{
     font-size: 1.5em;
     margin: auto;
     padding: 0px 50px 0px 25px;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 
 #intro h2{
